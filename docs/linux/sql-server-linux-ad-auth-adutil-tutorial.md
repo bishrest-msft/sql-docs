@@ -48,7 +48,7 @@ On the Linux host machine, use the following commands to install adutil-preview.
 1. Download the Microsoft Red Hat repository configuration file.
 
     ```bash
-    sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/8/prod.repo
+    sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/8/mssql-server-preview.list
     ```
 
 1. If you had a previous version of adutil installed, remove any older adutil packages.
@@ -68,7 +68,7 @@ On the Linux host machine, use the following commands to install adutil-preview.
 1. Register the Microsoft Ubuntu repository.
 
     ```bash
-    sudo curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+    sudo curl https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-preview.list | sudo tee /etc/apt/sources.list.d/msprod.list
     ```
 
 1. If you had a previous version of adutil installed, remove any older adutil packages using the below commands
@@ -88,7 +88,7 @@ On the Linux host machine, use the following commands to install adutil-preview.
 1. Add the Microsoft SQL Server repository to Zypper.
 
     ```bash
-    sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/prod.repo 
+    sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/mssql-server-preview.list 
     ```
 
 1. If you had a previous version of adutil installed, remove any older adutil packages.
